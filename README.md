@@ -16,3 +16,21 @@ Este projeto visa reforçar conceitos fundamentais de Node.js por meio da criaç
 - Marcar/desmarcar uma tarefa como concluída
 - Importar tarefas em massa por arquivo `.csv`
 
+📥 Importação de CSV
+A importação de tarefas por CSV é feita utilizando Streams com um comando dedicado:
+
+```bash
+npm run import:csv
+```
+
+O arquivo .csv de exemplo está disponível em: ./tasks_example.csv
+
+As tasks devem conter no CSV as colunas: title,description
+
+🧪 Testes via Insomnia
+Um exemplo de collection do Insomnia com todas as rotas da API está disponível no repositório:
+
+Arquivo: InsomniaCollectionExample.yaml
+
+Basta importar no Insomnia para testar todas as funcionalidades da API.
+
