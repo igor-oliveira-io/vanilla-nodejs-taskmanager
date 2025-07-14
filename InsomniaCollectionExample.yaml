@@ -1,0 +1,137 @@
+type: collection.insomnia.rest/5.0
+name: Ignite NodeJS 01
+meta:
+  id: wrk_daae9df545be4f69b223e05c9f5556b9
+  created: 1689041323511
+  modified: 1752498085455
+  description: ""
+collection:
+  - url: http://localhost:3333/tasks
+    name: Create Task
+    meta:
+      id: req_87ce2879032a4e438721e8ee52a3c466
+      created: 1689041328482
+      modified: 1752526205189
+      isPrivate: false
+      description: ""
+      sortKey: -1689041328482
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Estudar",
+        	"description": "Estudar Nodejs"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tasks
+    name: Select Tasks
+    meta:
+      id: req_10f0d990f84a471ba61289d04287e42c
+      created: 1689041481021
+      modified: 1752523262961
+      isPrivate: false
+      description: ""
+      sortKey: -1689041328432
+    method: GET
+    parameters:
+      - id: pair_2a52a211ae73439b9a56822f9d1d3a58
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tasks/371f3b23-62ae-4203-95bb-bdb268fd2a2b
+    name: Delete Task
+    meta:
+      id: req_765fd4db5f674c9e8a9daef51e6e2cbb
+      created: 1689558038083
+      modified: 1752524317452
+      isPrivate: false
+      description: ""
+      sortKey: -1689558038083
+    method: DELETE
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tasks/5b1fea07-73ad-4876d-a86f8b654237
+    name: Update Task
+    meta:
+      id: req_8881dfb5b7fa43ea99a8c7c5968b22e0
+      created: 1689559024797
+      modified: 1752525651840
+      isPrivate: false
+      description: ""
+      sortKey: -1689041328457
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Estudar",
+        	"description": "Estudar Nodejs na Rocketseat"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tasks/5b1fea07-73ad-4876-88d-a86f8b654237/complete
+    name: Complete Task
+    meta:
+      id: req_6a1e3fb5b89e4da2a4a2d53cfda08caf
+      created: 1752524555713
+      modified: 1752525700375
+      isPrivate: false
+      description: ""
+      sortKey: -1689041328332
+    method: PATCH
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_e28c9a6ed065c045e346eb0a89ac4926da7ed89c
+    created: 1752498085537
+    modified: 1752498085537
+environments:
+  name: Base Environment
+  meta:
+    id: env_e28c9a6ed065c045e346eb0a89ac4926da7ed89c
+    created: 1689041323514
+    modified: 1752498085452
+    isPrivate: false

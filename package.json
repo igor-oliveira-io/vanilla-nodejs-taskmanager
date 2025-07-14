@@ -1,0 +1,25 @@
+{
+  "name": "01-fundamentos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "import:csv": "node src/import-csv.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igor-oliveira-io/rocketseat-ignite-nodejs-01-fundamentos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igor-oliveira-io/rocketseat-ignite-nodejs-01-fundamentos/issues"
+  },
+  "homepage": "https://github.com/igor-oliveira-io/rocketseat-ignite-nodejs-01-fundamentos#readme",
+  "dependencies": {
+    "csv-parse": "^6.0.0"
+  }
+}
